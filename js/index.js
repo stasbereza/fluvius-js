@@ -47,7 +47,7 @@ var func2 = func1.bind(alert);
 func2('Test'); // alert 'Test'
 
 function myBind(func, context) {
-  return func2.bind(alert);
+  return func.bind(context);
 }
 
 var func3 = myBind(func1, alert);
